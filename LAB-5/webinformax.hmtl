@@ -1,0 +1,89 @@
+
+<html>
+<head>
+<title>Web Informax</title>
+</head>
+<body>
+
+<center>
+<h1>Web Informax IT services</h1>
+<table height=200 width=400 border=3 cellspacing=0 cellpadding=0>
+<tr>
+<th rowspan=2>Sr. NO</th>
+<th rowspan=2>Details of the services provided</th>
+<th rowspan=2>Qty</th>
+<th colspan=2>Service Period</th>
+
+<th colspan=4>Service Performance Details</th>
+</tr>
+<tr>
+<th>FROM</th>
+<th>TO</th>
+<th>S.No.</th>
+<th>Service ID no.</th>
+
+<th>Gaps in Service</th>
+<th>Overall Performance Remarks</th>
+</tr>
+
+<tr>
+
+	<td rowspan=3>1</td>
+	<td rowspan=3></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>1</td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>2</td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>3</td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+
+
+
+<tr>
+	<td rowspan=2>2.</td>
+	<td rowspan=2></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>4</td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>5</td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+
+</table>
+</center>
+</body>
+</html>
