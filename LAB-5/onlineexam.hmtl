@@ -1,35 +1,27 @@
-<html> 
-<head> 
-<title>abc</title>
+<html>
+<head>
+<title>Online Exam System</title>
 </head>
-<body bgcolor="white" >
-<center>
-<table width=900 height=900 border=2 cellpadding=5 cellspacing=0 bgcolor="white">
+<body text="black">
+<table align=center width=900 height=200 border=1 cellspacing=0 bgcolor="white">
 <tr>
-<th colspan=2 align="center" text="gray" ><font size=7> Online Exam System</font></th> 
+<th colspan=2><h1 align="center"><font color="grey">Online Exam System</font></h1></th>
 </tr>
 <tr>
-<td colspan=2><nav>
-	<a href="/html/">HOME</a>||
-	<a href="/css/">ABOUT US</a>||
-	<a href="/courses/">courses</a>||
-	<a href="/css/">Exam date</a>||
-	<a href="/css/">result</a>||
-	<a href="/css/">gallery</a>
-	</nav>
-</td> 
+<th colspan=2><h3 align=left><a href="">HOME</a> ||<a href="">ABOUT US</a> ||<a href="">Courses</a> ||<a href="">Exam date</a> ||<a href="">Result</a> ||<a href="">Gallery</a></h3></th>
 </tr>
 <tr>
-<td colspan=2 text="gray"> <marquee direction="right" scrolldelay=10 scrollamount=10> Welcome to Online Exam System </td>
+<th colspan=2><marquee direction="right" bgcolor=white height=50 width=100% secolldelay=10 scrollamount=10>
+<font color="grey" size=5>Welcome to Online Exam System</font></th>
 </tr>
 <tr>
-<td>
-<h1 text="black" align="top"> Welcome to Online Exam System </h1>
-</td>
-<td>
-<h2>Our Members</h2>
-<marquee direction="up" scrolldelay=10 scrollamount=10> 
-</td>
+<th><h1 align=left>Welcome to Online Exam System</h1>
+<img src="https://img.freepik.com/premium-vector/illustration-man-taking-online-college-exam-home-vector_218660-821.jpg" height=160 width=160 align="left" border=2 border-color=black>
+<h3><font color=grey><p>Video provides a powerful way to help prove your point. When you click onine, you can paste in the embed code for the video you want to add. To make your document professionally produced, Word produced header, footer, cover page, and text box designs that complement each other. For example you can add a matching cover page,header and sidebar. Click insert and then choose the elements you want from different galleries</p>
+<p><font="grey">Themes and styles also help keep your document coordinated. When you click Design and choose a new theme, the pictures, chart, Smartart graphics change to match your new theme. Save time in word with new buttons that show up when you need them.</font> 
+</p></font>
+</th>
+<th><font align="top">Our Members</font><hr color="red" width=90%><p><img src="">Director</p><p><img src="">Manager</p></th>
 </tr>
 </table>
 </body>
