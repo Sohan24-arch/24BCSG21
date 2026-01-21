@@ -1,0 +1,36 @@
+<html> 
+<head> 
+<title>abc</title>
+</head>
+<body bgcolor="white" >
+<center>
+<table width=900 height=900 border=2 cellpadding=5 cellspacing=0 bgcolor="white">
+<tr>
+<th colspan=2 align="center" text="gray" ><font size=7> Online Exam System</font></th> 
+</tr>
+<tr>
+<td colspan=2><nav>
+	<a href="/html/">HOME</a>||
+	<a href="/css/">ABOUT US</a>||
+	<a href="/courses/">courses</a>||
+	<a href="/css/">Exam date</a>||
+	<a href="/css/">result</a>||
+	<a href="/css/">gallery</a>
+	</nav>
+</td> 
+</tr>
+<tr>
+<td colspan=2 text="gray"> <marquee direction="right" scrolldelay=10 scrollamount=10> Welcome to Online Exam System </td>
+</tr>
+<tr>
+<td>
+<h1 text="black" align="top"> Welcome to Online Exam System </h1>
+</td>
+<td>
+<h2>Our Members</h2>
+<marquee direction="up" scrolldelay=10 scrollamount=10> 
+</td>
+</tr>
+</table>
+</body>
+</html>
