@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Aurum Gold</title>
+    <link rel="stylesheet" href="assignment-gold.css">
+</head>
+<body>
+    <div class="navbar">
+            <div id="logo">
+                <p id="first">AURUM</p>GOLD
+            </div>
+        
+            <ul>
+                <a href="">SERVICES</a>
+                <a href="">WHY GOLD</a>
+                <a href="">PRODUCTS</a>
+                <a href="">REVIEWS</a>
+                <a href="">CONTACT</a>
+            </ul>
+            <button id="btn1">SELL GOLD</button>
+            <button id="btn2">BUY GOLD</button>
+    </div>
+	 <button id="btn3">MARKET OPEN TRADING LIVE</button>
+	 <div class="main">
+            <div class="main1">
+			  <h1 id="head1">Invest in gold and secure your future</h1> 
+			  <p id="para">experience premium gold trading with competitve rates decure storage and expert guidance.Join thousands of investors who trust us with their metals portfolio.</p>
+            <button id="btn2">EXPLORE PRODUCTS</button>
+            </div>
+	</div>
+</body>
+</html>
