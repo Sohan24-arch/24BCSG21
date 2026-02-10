@@ -1,93 +1,182 @@
-*{
-    margin: 0;
-    padding: 0;
-    color: rgb(189, 181, 181);
-}
-body{
-    background-color: black;
-}
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Georgia", serif;
+    }
 
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 15%;
-    width: 100%;
-    margin-top: 7px;
-}
+    body {
+      background: #0b0b0b;
+      color: white;
+    }
 
-a{
-    text-decoration: none;
-    margin: 10px;
-}
-#logo{
-    margin-right: 300px;
-    display: flex;
-    font-size: 20px;
-}
-#first{
-    display: flex;
-    margin-right: 10px;
-    font-size: 20px;
-    color: gold;
-}
+    /* NAVBAR */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 80px;
+    }
 
-#btn1{
-    background-color: black;
-    margin-left: 20px;
-    border: 100px gold;
-    padding: 10px;
-    font-size: small;
-}
-#btn2{
-    background-color: gold;
-    margin-left: 20px;
-    border: 1px gold;
-    padding: 10px;
-    color: black;
-    font-size: small;
-}
-#btn3{
-	background-color: grey;
-    margin:20px,0px,0px,20px;
-	z-index:5;
-	margin-left:100px;
-    border: 1px solid grey;
-    padding: 10px;
-    color: white;
-    font-weight: 400;
-	margin-bottom:10px;
-	
-}
-.main{
-	display:flex;
-	background-color:black;
-}
-.main1{
-	height:400px;
-	width:400px;
-	background-color:gray;
-	margin-left:100px;
-	
-}
-.main2{
-	height:500px;
-	width:400px;
-	background-color:brown;
-}
-#head1{
-	font-size:45px;
-  color:black;
-  text-align:center;
-}  
-#para{
-	font-size:small;
-	margin-left:5px;
-	margin-right:5px;
-	color:black;
-}
+    header h2 {
+      color: gold;
+      letter-spacing: 2px;
+      font-size: 22px;
+    }
 
+    nav ul {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
 
+    nav ul li {
+      font-size: 14px;
+      cursor: pointer;
+      opacity: 0.8;
+    }
 
-	
-	
+    nav ul li:hover {
+      opacity: 1;
+      color: gold;
+    }
+
+    .nav-buttons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav-buttons button {
+      padding: 10px 18px;
+      border: 1px solid gold;
+      background: transparent;
+      color: gold;
+      cursor: pointer;
+      border-radius: 6px;
+      font-size: 13px;
+    }
+
+    .nav-buttons button:hover {
+      background: gold;
+      color: black;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      padding: 70px 80px;
+      gap: 50px;
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h1 {
+      font-size: 60px;
+      line-height: 1.2;
+    }
+
+    .hero-text span {
+      color: gold;
+    }
+
+    .hero-text p {
+      margin: 25px 0;
+      font-size: 15px;
+      opacity: 0.7;
+      line-height: 1.6;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .hero-buttons button {
+      padding: 12px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .btn-primary {
+      background: gold;
+      border: none;
+      color: black;
+    }
+
+    .btn-secondary {
+      border: 1px solid gold;
+      background: transparent;
+      color: gold;
+    }
+
+    /* PRICE CARD SECTION */
+    .price-box {
+      background: #151515;
+      padding: 25px;
+      border-radius: 12px;
+      width: 380px;
+    }
+
+    .price-box h3 {
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+    .price-box h2 {
+      font-size: 42px;
+      margin: 15px 0;
+      color: gold;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #1e1e1e;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .card h4 {
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+    .card p {
+      font-size: 18px;
+      margin-top: 10px;
+      color: gold;
+    }
+
+    /* STATS SECTION */
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      padding: 40px 80px;
+      border-top: 1px solid #222;
+      margin-top: 40px;
+    }
+
+    .stat h2 {
+      color: gold;
+      font-size: 26px;
+    }
+
+    .stat p {
+      font-size: 13px;
+      opacity: 0.7;
+      margin-top: 5px;
+    }
+
+  </style>
