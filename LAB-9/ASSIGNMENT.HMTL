@@ -5,29 +5,94 @@
     <title>Aurum Gold</title>
     <link rel="stylesheet" href="assignment-gold.css">
 </head>
-<body>
-    <div class="navbar">
-            <div id="logo">
-                <p id="first">AURUM</p>GOLD
-            </div>
-        
-            <ul>
-                <a href="">SERVICES</a>
-                <a href="">WHY GOLD</a>
-                <a href="">PRODUCTS</a>
-                <a href="">REVIEWS</a>
-                <a href="">CONTACT</a>
-            </ul>
-            <button id="btn1">SELL GOLD</button>
-            <button id="btn2">BUY GOLD</button>
+  <!-- NAVBAR -->
+  <header>
+    <h2>AURUM GOLD</h2>
+
+    <nav>
+      <ul>
+        <li>Services</li>
+        <li>Why Gold</li>
+        <li>Products</li>
+        <li>Reviews</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+
+    <div class="nav-buttons">
+      <button>Sell Gold</button>
+      <button>Buy Gold</button>
     </div>
-	 <button id="btn3">MARKET OPEN TRADING LIVE</button>
-	 <div class="main">
-            <div class="main1">
-			  <h1 id="head1">Invest in gold and secure your future</h1> 
-			  <p id="para">experience premium gold trading with competitve rates decure storage and expert guidance.Join thousands of investors who trust us with their metals portfolio.</p>
-            <button id="btn2">EXPLORE PRODUCTS</button>
-            </div>
-	</div>
+  </header>
+
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+
+    <!-- LEFT TEXT -->
+    <div class="hero-text">
+      <h1>Invest in <span>Gold</span><br>Secure Your<br>Future</h1>
+
+      <p>
+        Experience premium gold trading with competitive rates,
+        secure storage, and expert guidance. Join thousands of investors.
+      </p>
+
+      <div class="hero-buttons">
+        <button class="btn-primary">Explore Products</button>
+        <button class="btn-secondary">Get Free Consultation</button>
+      </div>
+    </div>
+
+
+    <!-- RIGHT PRICE BOX -->
+    <div class="price-box">
+      <h3>Gold Spot Price (XAU/USD)</h3>
+      <h2>$6,241.50</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h4>Silver (XAG)</h4>
+          <p>$31.42</p>
+        </div>
+
+        <div class="card">
+          <h4>Platinum (XPT)</h4>
+          <p>$1,024.80</p>
+        </div>
+
+        <div class="card">
+          <h4>Palladium (XPD)</h4>
+          <p>$986.50</p>
+        </div>
+
+        <div class="card">
+          <h4>Gold/Silver Ratio</h4>
+          <p>136.4</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- STATS SECTION -->
+  <section class="stats">
+    <div class="stat">
+      <h2>$2.5B+</h2>
+      <p>Assets Under Management</p>
+    </div>
+
+    <div class="stat">
+      <h2>50K+</h2>
+      <p>Satisfied Clients</p>
+    </div>
+
+    <div class="stat">
+      <h2>15+</h2>
+      <p>Years Experience</p>
+    </div>
+  </section>
+
 </body>
 </html>
