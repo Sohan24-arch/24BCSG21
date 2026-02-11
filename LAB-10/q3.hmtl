@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>abc</title>
+<link rel="stylesheet" type="text/css" href="q3.css">
+</head>
+<body>
+
+
+  <img src="dog1.jpg" alt="this is a dog" class="p"> 
+
+</body>
+</html>
