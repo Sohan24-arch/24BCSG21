@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>QUESTION 3</title>
+<script language="JavaScript">
+let num=121;
+let n =num;
+let rev=0;
+
+while(n>0) 
+{
+let digit=n%10;
+rev=rev*10+digit;
+n=Math.floor(n/10);
+}
+document.write("Original: "+num+"<br>");
+document.write("Reverse: "+rev+"<br>");
+if(num==rev)
+{
+document.write(num+" is a palindrome<br>");
+}
+else
+{
+document.write(num+" is not a palindrome<br>");
+}
+
+</script>
+</head>
+<body bgcolor="white" text="brown">
+</body>
+</html>
+
