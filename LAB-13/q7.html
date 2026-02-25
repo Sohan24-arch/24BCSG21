@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>QUESTION 7</title>
+<script language="JavaScript">
+ let arr = [12, 45, 7, 89, 23, 56, 45, 12, 7, 23, 23];
+    let frequency = {};
+
+    for (let i = 0; i < arr.length; i++) {
+        let element = arr[i];
+        if (frequency[element]) {
+            frequency[element] += 1;
+        } else {
+            frequency[element] = 1;
+        }
+    }
+
+    document.write("Array elements: " + arr+"</br>");
+    document.write("Frequency of each element:");
+    for (let key in frequency) {
+        document.write(key + " occurs " + frequency[key] + " times");
+    }
+</script>
+</head>
+<body bgcolor="white" text="brown">
+</body>
+</html>
