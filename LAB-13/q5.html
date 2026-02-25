@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>QUESTION 5</title>
+<script language="JavaScript">
+ let arr = [12, 45, 7, 89, 23, 56];
+    let largest = -Infinity;
+    let secondLargest = -Infinity;
+
+    for (let i = 0; i < arr.length; i++) 
+	{
+        if (arr[i] > largest)
+		{
+            secondLargest = largest;
+            largest = arr[i];
+        } 
+		else if (arr[i] > secondLargest && arr[i] < largest) 
+		{
+            secondLargest = arr[i];
+        }
+    }
+    console.log("Array elements: " + arr+"  ");
+    console.log("Largest = " + largest+"  ");
+    console.log("Second Largest = " + secondLargest);
+</script>
+</head>
+<body bgcolor="white" text="brown">
+</body>
+</html>
