@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>QUESTION 4</title>
+<script language="JavaScript">
+let arr = [12, 45, 7, 89, 23, 56];
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+
+    let average = sum / arr.length;
+    let largest = arr[0];
+    let smallest = arr[0];
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > largest) {
+            largest = arr[i];
+        }
+        if (arr[i] < smallest) {
+            smallest = arr[i];
+        }
+    }
+    console.log("Array elements: "+arr+" ");
+    console.log("Sum = " + sum+" ");
+    console.log(" Average = " + average+" ");
+    console.log(" Largest = " + largest+" ");
+    console.log(" Smallest = " + smallest+" ");
+</script>
+</head>
+<body bgcolor="white" text="brown">
+</body>
+</html>
