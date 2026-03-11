@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>QUESTION 8</title>
+<script language="JavaScript">
+         function isPrime(num)
+		 {   
+		     if(num<2)
+			 {
+			     return false;
+		     }
+			for (let i = 2; i < num; i++) 
+			{
+                if (num % i === 0) 
+				{
+                return false;
+				}
+			}
+			return true;
+		} 
+		let testNums = [1, 2, 7, 10, 13, 25, 31];
+
+    document.write("Testing Prime Numbers:<br>");
+    for (let i = 0; i < testNums.length; i++) 
+	{
+        let n = testNums[i];
+        document.write(n + " is prime? " + isPrime(n) + "<br>");
+    }
+	</script>
+</head>
+<body bgcolor="white" text="brown">
+</body>
+</html>

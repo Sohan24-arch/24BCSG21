@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>QUESTION 9</title>
+<script language="JavaScript">
+    let num = 195; 
+    let temp = num;
+    let sum = 0;
+    let digits = num.toString().length;
+	 while (temp > 0) 
+	 {
+        let remainder = temp % 10;
+        sum += Math.pow(remainder, digits);
+        temp = Math.floor(temp / 10);
+    }
+
+    document.write("Number: " + num + "<br>");
+    if (sum === num) 
+	{
+        document.write(num + " is an Armstrong number.");
+    } 
+	else 
+	{
+        document.write(num + " is not an Armstrong number.");
+    }
+	</script>
+</head>
+<body bgcolor="white" text="black">
+</body>
+</html>
+

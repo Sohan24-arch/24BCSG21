@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>QUESTION 10</title>
+<script language="JavaScript">
+    let numbers = [12, 45, 7, 89, 23, 56, 4, 11, 2];
+    let evenArr = [];
+    let oddArr = [];
+
+    for (let i = 0; i < numbers.length; i++)
+	{
+        if (numbers[i] % 2 == 0) 
+		{
+            evenArr.push(numbers[i]);
+        } 
+		else 
+		{
+            oddArr.push(numbers[i]);
+        }
+    }
+	 document.write("Original Array: " + numbers + "<br><br>");
+    document.write("<b>Even Numbers:</b> " + evenArr + "<br>");
+    document.write("<b>Odd Numbers:</b> " + oddArr + "<br>");
+	</script>
+</head>
+<body bgcolor="white" text="black">
+</body>
+</html>
