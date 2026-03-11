@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>QUESTION 11</title>
+<script language="JavaScript">
+     function reverseArray(arr) {
+        let reversed = [];
+        
+        for (let i = arr.length - 1; i >= 0; i--) {
+            reversed.push(arr[i]);
+        }
+        
+        return reversed;
+    }
+
+    let original = [10, 20, 30, 40, 50];
+    let result = reverseArray(original);
+
+    document.write("Original Array: " + original + "<br>");
+    document.write("Reversed Array: " + result);
+</script>
+</head>
+<body bgcolor="white" text="black">
+</body>
+</html>
+	
