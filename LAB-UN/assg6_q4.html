@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Counter</title>
+  <style>
+    body 
+	{
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    input 
+	{
+      width: 50px;
+      text-align: center;
+      font-size: 18px;
+    }
+    button 
+	{
+      font-size: 18px;
+      margin: 5px;
+      padding: 5px 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Counter</h2>
+  <input type="text" id="counter" value="0" readonly>
+  <br>
+  <button onclick="increase()">+</button>
+  <button onclick="decrease()">-</button>
+
+  <script>
+    function increase() 
+	{
+      let counter = document.getElementById("counter");
+      counter.value = parseInt(counter.value) + 1;
+    }
+
+    function decrease() 
+	{
+      let counter = document.getElementById("counter");
+      let currentValue = parseInt(counter.value);
+      if (currentValue > 0) {
+        counter.value = currentValue - 1;
+      }
+    }
+  </script>
+</body>
+</html>
