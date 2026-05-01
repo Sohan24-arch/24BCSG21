@@ -1,0 +1,491 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: rgba(0,0,0,0.85);
+}
+
+.logo {
+    position: static;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.3s;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #fdd835;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after,
+nav a.active::after {
+    width: 100%;
+}
+
+nav a:hover,
+nav a.active {
+    color: #fdd835;
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#bgVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero h2 {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+}
+
+/* BUTTON */
+button {
+    background-color: #fdd835;
+    color: #000;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffc107;
+}
+
+/* EVENT SECTION */
+.event-section {
+    position: relative;
+    height: 50vh;
+    background-image: url('images/lambo2');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+}
+
+.event-section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+}
+
+.event-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+}
+
+.event-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.event-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.event-btn {
+    background-color: #fdd835;
+    padding: 12px 25px;
+    border: none;
+    font-weight: bold;
+}
+
+/* MODEL SLIDER */
+.models-slider {
+    background: #f5f5f5;
+    color: #000;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slider-container {
+    display: flex;
+    height: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slider-container::-webkit-scrollbar {
+    display: none;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.model-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.model-tagline {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.car-img {
+    width: 70%;
+    max-width: 900px;
+}
+
+/* OLD models (kept but unused) */
+.models-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.model-card {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.model-card img {
+    width: 100%;
+}
+
+/* MILESTONES */
+.milestones {
+    background: #f5f5f5;
+    color: #000;
+    padding: 50px 40px;
+}
+
+.milestones h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.timeline {
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.timeline::-webkit-scrollbar {
+    height: 6px;
+}
+
+.timeline::-webkit-scrollbar-thumb {
+    background: #ccc;
+}
+
+.milestone {
+    min-width: 300px;
+    flex-shrink: 0;
+}
+
+.milestone h3 {
+    font-size: 16px;
+    color: #555;
+}
+
+.milestone img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin: 10px 0;
+}
+
+.milestone h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.milestone p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 5px 0;
+    background-color: black;
+    color: #aaa;
+    font-size: 12px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ✅ Logo Evolution Section */
+.logo-evolution {
+    padding: 60px 40px;
+    background: #111;
+    color: #fff;
+}
+
+.logo-evolution h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #fdd835;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.logo-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.logo-text {
+    max-width: 600px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.6em;
+    color: #ddd;
+}
+
+.logo-text em {
+    color: #fdd835;
+    font-style: italic;
+}
+
+.logo-image img {
+    max-width: 350px;
+    border: 3px solid #fdd835;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(253, 216, 53, 0.6);
+}
+
+/* ✅ Motorsport News Section */
+.motorsport-news {
+    background: #000;
+    color: #fff;
+    padding: 60px 40px;
+}
+
+.motorsport-news h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #fdd835;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.news-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.news-card {
+    background: #111;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-10px);
+}
+
+.news-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.news-info {
+    padding: 15px;
+}
+
+.news-info .date {
+    font-size: 12px;
+    color: #aaa;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.news-info h2 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4em;
+    color: #fff;
+}
+/* MUSEUM SECTION */
+.museum-section {
+    position: relative;
+    background: url('images/museum-bg.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: 80px 40px;
+}
+
+.museum-section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6); /* dark overlay for readability */
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.museum-overlay {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.museum-overlay h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #fdd835;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.museum-overlay p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+    color: #ddd;
+}
+
+/* Museum Slider */
+.museum-slider {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+.museum-slider::-webkit-scrollbar {
+    height: 6px;
+}
+
+.museum-slider::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 3px;
+}
+
+.museum-slide {
+    min-width: 400px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    background: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(253, 216, 53, 0.4);
+}
+
+.museum-slide img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
